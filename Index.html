@@ -3,6 +3,433 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jessicas Drinkbar 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+  :root {
+    --rosa: #E8758A; --mörkrosa: #C2185B; --ljusrosa: #FCE4EC;
+    --cream: #FFF8F2; --mörkbrun: #2A1A1A; --grå: #888;
+    --grön: #2E7D32; --ljusgrön: #E8F5E9;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: var(--cream); min-height: 100vh; color: var(--mörkbrun); padding-bottom: 80px; }
+
+  /* HEADER */
+  header { background: linear-gradient(135deg, var(--mörkrosa), #8E1445); padding: 1.5rem 1.5rem 1rem; text-align: center; }
+  header h1 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: white; }
+  header p { color: rgba(255,255,255,0.75); font-size: 0.8rem; margin-top: 0.3rem; font-weight: 300; }
+
+  /* BOTTOM NAV */
+  .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; background: white; border-top: 1px solid #EEE; display: flex; z-index: 100; box-shadow: 0 -2px 10px rgba(0,0,0,0.08); }
+  .nav-btn { flex: 1; padding: 0.8rem 0.5rem 0.6rem; text-align: center; cursor: pointer; border: none; background: none; font-family: 'Inter', sans-serif; color: var(--grå); font-size: 0.7rem; font-weight: 500; transition: color 0.15s; }
+  .nav-btn .nav-icon { font-size: 1.3rem; display: block; margin-bottom: 0.2rem; }
+  .nav-btn.active { color: var(--mörkrosa); }
+  .nav-btn.active .nav-icon { transform: scale(1.1); }
+
+  /* PAGES */
+  .page { display: none; max-width: 480px; margin: 0 auto; padding: 1.2rem 1rem; }
+  .page.active { display: block; }
+
+  /* SECTION LABELS */
+  .section-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mörkrosa); margin-bottom: 0.7rem; margin-top: 1.4rem; }
+  .section-label:first-child { margin-top: 0; }
+
+  /* CHIPS */
+  .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .chip { padding: 0.45rem 1rem; border-radius: 99px; border: 1.5px solid #DDD; background: white; font-size: 0.82rem; font-weight: 500; cursor: pointer; transition: all 0.15s; color: var(--mörkbrun); user-select: none; }
+  .chip:hover { border-color: var(--rosa); }
+  .chip.active { background: var(--mörkrosa); border-color: var(--mörkrosa); color: white; }
+  .chip.cat-gin.active { background: #2E7D32; border-color: #2E7D32; }
+  .chip.cat-rom.active { background: #5D4037; border-color: #5D4037; }
+  .chip.cat-lila.active { background: #6A1B9A; border-color: #6A1B9A; }
+  .chip.cat-cream.active { background: #AD1457; border-color: #AD1457; }
+  .chip.cat-neutral.active { background: #455A64; border-color: #455A64; }
+
+  /* SUGGEST BTN */
+  .suggest-btn { width: 100%; margin-top: 1.5rem; padding: 0.9rem; background: linear-gradient(135deg, var(--mörkrosa), #8E1445); color: white; border: none; border-radius: 12px; font-size: 1rem; font-weight: 600; cursor: pointer; font-family: 'Inter', sans-serif; transition: opacity 0.2s; }
+  .suggest-btn:hover { opacity: 0.92; }
+  .suggest-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  /* DRINK CARD */
+  .result-area { margin-top: 1.5rem; }
+  .drink-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(194,24,91,0.1); animation: slideUp 0.3s ease; }
+  @keyframes slideUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  .card-header { padding: 1.2rem 1.3rem 1rem; background: linear-gradient(135deg, var(--mörkrosa), #8E1445); color: white; }
+  .card-header.gin { background: linear-gradient(135deg, #2E7D32, #1B5E20); }
+  .card-header.rom { background: linear-gradient(135deg, #5D4037, #3E2723); }
+  .card-header.lila { background: linear-gradient(135deg, #6A1B9A, #4A148C); }
+  .card-header.cream { background: linear-gradient(135deg, #AD1457, #880E4F); }
+  .card-emoji { font-size: 1.8rem; margin-bottom: 0.3rem; }
+  .card-name { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; }
+  .card-desc { font-size: 0.8rem; opacity: 0.85; margin-top: 0.3rem; line-height: 1.4; }
+  .card-body { padding: 1.2rem 1.3rem; }
+  .card-section-title { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mörkrosa); margin-bottom: 0.5rem; margin-top: 0.9rem; }
+  .card-section-title:first-child { margin-top: 0; }
+  .ing-list { list-style: none; }
+  .ing-list li { font-size: 0.85rem; padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem; border-bottom: 1px solid #F5F5F5; }
+  .ing-list li:last-child { border-bottom: none; }
+  .ing-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--rosa); flex-shrink: 0; }
+  .ing-missing { width: 6px; height: 6px; border-radius: 50%; background: #CCC; flex-shrink: 0; }
+  .ing-list li.missing { color: #BBB; text-decoration: line-through; }
+  .step-list { list-style: none; counter-reset: steps; }
+  .step-list li { counter-increment: steps; font-size: 0.85rem; padding: 0.3rem 0 0.3rem 1.8rem; position: relative; line-height: 1.4; border-bottom: 1px solid #F5F5F5; }
+  .step-list li:last-child { border-bottom: none; }
+  .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 0.3rem; width: 1.2rem; height: 1.2rem; background: var(--ljusrosa); color: var(--mörkrosa); border-radius: 50%; font-size: 0.65rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  .tips-box { background: var(--ljusrosa); border-radius: 8px; padding: 0.7rem 0.9rem; font-size: 0.8rem; color: var(--mörkrosa); margin-top: 0.9rem; line-height: 1.4; }
+  .again-btn { width: 100%; margin-top: 1rem; padding: 0.7rem; background: white; color: var(--mörkrosa); border: 1.5px solid var(--rosa); border-radius: 10px; font-size: 0.9rem; font-weight: 600; cursor: pointer; font-family: 'Inter', sans-serif; }
+  .again-btn:hover { background: var(--ljusrosa); }
+  .no-drinks { background: white; border-radius: 16px; padding: 2rem; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+  .no-drinks p { color: var(--grå); font-size: 0.9rem; line-height: 1.6; }
+  .no-drinks a { color: var(--mörkrosa); font-weight: 600; cursor: pointer; text-decoration: none; }
+
+  /* LOADING */
+  .loading { text-align: center; padding: 2rem; color: var(--grå); }
+  .spinner { width: 28px; height: 28px; border: 3px solid var(--ljusrosa); border-top-color: var(--mörkrosa); border-radius: 50%; animation: spin 0.7s linear infinite; margin: 0 auto 0.8rem; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* INVENTORY */
+  .inv-category { margin-bottom: 1.2rem; }
+  .inv-category-title { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mörkrosa); margin-bottom: 0.6rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--ljusrosa); }
+  .inv-item { display: flex; align-items: center; justify-content: space-between; padding: 0.6rem 0.8rem; background: white; border-radius: 10px; margin-bottom: 0.4rem; box-shadow: 0 1px 4px rgba(0,0,0,0.05); cursor: pointer; transition: all 0.15s; }
+  .inv-item:hover { box-shadow: 0 2px 8px rgba(194,24,91,0.1); }
+  .inv-item.checked { background: var(--ljusgrön); }
+  .inv-item-left { display: flex; align-items: center; gap: 0.7rem; }
+  .inv-item-emoji { font-size: 1.1rem; }
+  .inv-item-name { font-size: 0.88rem; font-weight: 500; }
+  .inv-item-sub { font-size: 0.72rem; color: var(--grå); }
+  .inv-checkbox { width: 22px; height: 22px; border-radius: 6px; border: 2px solid #DDD; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; transition: all 0.15s; flex-shrink: 0; }
+  .inv-item.checked .inv-checkbox { background: var(--grön); border-color: var(--grön); color: white; }
+  .inv-counter { background: var(--ljusrosa); border-radius: 10px; padding: 0.8rem 1rem; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; }
+  .inv-counter span { font-size: 0.85rem; color: var(--mörkrosa); font-weight: 500; }
+  .inv-clear { font-size: 0.8rem; color: var(--grå); cursor: pointer; text-decoration: underline; border: none; background: none; font-family: 'Inter', sans-serif; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌸 Jessicas Drinkbar</h1>
+  <p id="header-sub">Laddar recept…</p>
+</header>
+
+<!-- SIDA 1: FÖRESLÅ -->
+<div class="page active" id="page-suggest">
+  <div class="section-label">Stämning</div>
+  <div class="chips">
+    <div class="chip cat-neutral active" data-group="mood" data-value="fräsch">Fräsch & lätt</div>
+    <div class="chip cat-neutral" data-group="mood" data-value="krämig">Krämig & söt</div>
+    <div class="chip cat-neutral" data-group="mood" data-value="stark">Stark & djup</div>
+    <div class="chip cat-neutral" data-group="mood" data-value="dessert">Dessertdrink</div>
+    <div class="chip cat-neutral" data-group="mood" data-value="fest">Festlig & färgrik</div>
+  </div>
+  <div class="section-label">Bas</div>
+  <div class="chips">
+    <div class="chip active" data-group="spirit" data-value="valfri">Spelar ingen roll</div>
+    <div class="chip cat-rom" data-group="spirit" data-value="rom">Rom 🥃</div>
+    <div class="chip cat-gin" data-group="spirit" data-value="gin">Gin 🌿</div>
+    <div class="chip" data-group="spirit" data-value="vodka">Vodka</div>
+    <div class="chip" data-group="spirit" data-value="likör">Bara likör</div>
+  </div>
+  <div class="section-label">Mixer</div>
+  <div class="chips">
+    <div class="chip active" data-group="mixer" data-value="valfri">Spelar ingen roll</div>
+    <div class="chip" data-group="mixer" data-value="mjölk">Rosa mjölk 🥛</div>
+    <div class="chip" data-group="mixer" data-value="tonic">Tonic</div>
+    <div class="chip" data-group="mixer" data-value="cola">Cola</div>
+    <div class="chip" data-group="mixer" data-value="bubbel">Bubbel/7UP</div>
+    <div class="chip cat-cream" data-group="mixer" data-value="grädde">Med grädde 🍦</div>
+  </div>
+  <button class="suggest-btn" id="suggest-btn" onclick="getDrink()">✨ Föreslå en drink</button>
+  <div class="result-area" id="result"></div>
+</div>
+
+<!-- SIDA 2: SKAFFERIET -->
+<div class="page" id="page-inventory">
+  <div class="inv-counter">
+    <span id="inv-count">0 av 0 ingredienser hemma</span>
+    <button class="inv-clear" onclick="clearAll()">Rensa allt</button>
+  </div>
+  <div id="inventory-list"></div>
+</div>
+
+<!-- BOTTOM NAV -->
+<div class="bottom-nav">
+  <button class="nav-btn active" id="nav-suggest" onclick="showPage('suggest')">
+    <span class="nav-icon">🍸</span>Föreslå
+  </button>
+  <button class="nav-btn" id="nav-inventory" onclick="showPage('inventory')">
+    <span class="nav-icon">🗄️</span>Skafferiet
+  </button>
+</div>
+
+<script>
+let drinks = [];
+let inventory = {}; // { ingredientKey: true/false }
+let lastIndex = -1;
+const catColors = { gin: "gin", rom: "rom", lila: "lila", cream: "cream" };
+
+// Alla ingredienser grupperade
+const ingredientGroups = {
+  "🥃 Sprit": [
+    { key: "havana", name: "Havana Club 3 Años", sub: "Ljus rom" },
+    { key: "plantation", name: "Plantation Original Dark", sub: "Mörk rom" },
+    { key: "gibson", name: "Gibson's London Dry Gin", sub: "Gin" },
+    { key: "rushkinoff", name: "Rushkinoff Vodka", sub: "Vodka 50%" },
+  ],
+  "🍬 Likörer": [
+    { key: "saturnus", name: "Saturnus Jordgubb & Rabarber", sub: "Sommarlikör" },
+    { key: "cannella", name: "Bottega Cannella", sub: "Kanellikör" },
+    { key: "cacao", name: "Bols Cacao (vit)", sub: "Kakaolikör" },
+    { key: "cacao_brown", name: "Bols Cacao Brown", sub: "Mörk kakaolikör" },
+    { key: "licor43", name: "Licor 43", sub: "Vanilj/citrus" },
+    { key: "jager", name: "Jägermeister", sub: "Örter" },
+    { key: "baileys", name: "Baileys Irish Cream", sub: "Irish cream" },
+  ],
+  "🥤 Mixers": [
+    { key: "tonic", name: "Schweppes Indian Tonic", sub: "Tonic" },
+    { key: "russchian", name: "Schweppes Russchian", sub: "Red Fruits" },
+    { key: "sprite", name: "Sprite", sub: "Lemon-Lime" },
+    { key: "7up", name: "7UP", sub: "Original" },
+    { key: "pink7up", name: "7UP Zero Pink Lemonade", sub: "Rosa lemonad" },
+    { key: "pepsi", name: "Pepsi Max", sub: "Cola" },
+    { key: "cola", name: "Coca-Cola", sub: "Cola" },
+    { key: "gingerjoe", name: "Ginger Joe", sub: "Ingefärsbeer 4%" },
+    { key: "bluecuracao", name: "Bar King Blue Curaçao", sub: "Alkoholfri mixer" },
+    { key: "svagdricka", name: "Gammeldags Svagdricka", sub: "Alkoholfri" },
+  ],
+  "🥛 Mejeri & Färskt": [
+    { key: "rosamjolk", name: "Rosa Mjölkdryck Jordgubb", sub: "Arla Ko" },
+    { key: "gradde", name: "Vispgrädde", sub: "Mejeri" },
+    { key: "citron", name: "Citron", sub: "Färskt" },
+  ]
+};
+
+// Ingredient key mapping för recept
+const ingredientMap = {
+  "havana": ["Havana Club"],
+  "plantation": ["Plantation"],
+  "gibson": ["Gibson"],
+  "rushkinoff": ["Rushkinoff", "Vodka"],
+  "saturnus": ["Saturnus"],
+  "cannella": ["Cannella"],
+  "cacao": ["Bols Cacao (vit)", "Bols Cacao"],
+  "cacao_brown": ["Cacao Brown"],
+  "licor43": ["Licor 43"],
+  "jager": ["Jägermeister"],
+  "baileys": ["Baileys"],
+  "tonic": ["Indian Tonic", "Tonic"],
+  "russchian": ["Russchian"],
+  "sprite": ["Sprite"],
+  "7up": ["7UP"],
+  "pink7up": ["Pink Lemonade", "Pink 7UP"],
+  "pepsi": ["Pepsi"],
+  "cola": ["Coca-Cola", "Cola"],
+  "gingerjoe": ["Ginger Joe"],
+  "bluecuracao": ["Blue Curaçao"],
+  "svagdricka": ["Svagdricka"],
+  "rosamjolk": ["Rosa Mjölkdryck", "Rosa Mjölk"],
+  "gradde": ["vispgrädde", "grädde"],
+  "citron": ["citronjuice", "Citronskiva", "citron"]
+};
+
+function loadInventory() {
+  const saved = localStorage.getItem('bar_inventory');
+  if (saved) inventory = JSON.parse(saved);
+}
+
+function saveInventory() {
+  localStorage.setItem('bar_inventory', JSON.stringify(inventory));
+}
+
+function toggleItem(key) {
+  inventory[key] = !inventory[key];
+  saveInventory();
+  renderInventory();
+  updateSuggestBtn();
+}
+
+function clearAll() {
+  if (confirm('Rensa alla bockar?')) {
+    inventory = {};
+    saveInventory();
+    renderInventory();
+    updateSuggestBtn();
+  }
+}
+
+function renderInventory() {
+  const list = document.getElementById('inventory-list');
+  let html = '';
+  let total = 0, checked = 0;
+  for (const [group, items] of Object.entries(ingredientGroups)) {
+    html += `<div class="inv-category"><div class="inv-category-title">${group}</div>`;
+    for (const item of items) {
+      total++;
+      const isChecked = !!inventory[item.key];
+      if (isChecked) checked++;
+      html += `
+        <div class="inv-item ${isChecked ? 'checked' : ''}" onclick="toggleItem('${item.key}')">
+          <div class="inv-item-left">
+            <div>
+              <div class="inv-item-name">${item.name}</div>
+              <div class="inv-item-sub">${item.sub}</div>
+            </div>
+          </div>
+          <div class="inv-checkbox">${isChecked ? '✓' : ''}</div>
+        </div>`;
+    }
+    html += '</div>';
+  }
+  list.innerHTML = html;
+  document.getElementById('inv-count').textContent = `${checked} av ${total} ingredienser hemma`;
+}
+
+function updateSuggestBtn() {
+  const checkedCount = Object.values(inventory).filter(Boolean).length;
+  const btn = document.getElementById('suggest-btn');
+  if (checkedCount === 0) {
+    btn.textContent = '⚠️ Bocka av vad ni har i Skafferiet';
+    btn.disabled = false;
+  } else {
+    btn.textContent = '✨ Föreslå en drink';
+    btn.disabled = false;
+  }
+}
+
+function ingredientAvailable(ingText) {
+  for (const [key, aliases] of Object.entries(ingredientMap)) {
+    if (!inventory[key]) continue;
+    for (const alias of aliases) {
+      if (ingText.toLowerCase().includes(alias.toLowerCase())) return true;
+    }
+  }
+  return false;
+}
+
+function drinkScore(drink, sel) {
+  // Kolla vilka ingredienser som finns
+  const checkedCount = Object.values(inventory).filter(Boolean).length;
+  if (checkedCount === 0) {
+    // Inget bockat — visa alla
+    let s = 0;
+    if (drink.mood.includes(sel.mood)) s += 3;
+    if (sel.spirit !== "valfri" && drink.spirit.includes(sel.spirit)) s += 3;
+    else if (sel.spirit === "valfri") s += 1;
+    if (sel.mixer !== "valfri" && drink.mixer.includes(sel.mixer)) s += 3;
+    else if (sel.mixer === "valfri") s += 1;
+    return s;
+  }
+
+  // Räkna tillgängliga ingredienser
+  let available = 0, missing = 0;
+  for (const ing of drink.ingredients) {
+    if (ing.toLowerCase().includes('is') || ing.toLowerCase().includes('garnering')) continue;
+    if (ingredientAvailable(ing)) available++;
+    else missing++;
+  }
+  if (missing > 1) return -1; // Saknar mer än 1 — skippa
+
+  let s = available * 2;
+  if (missing === 0) s += 5; // Bonus för komplett recept
+  if (drink.mood.includes(sel.mood)) s += 3;
+  if (sel.spirit !== "valfri" && drink.spirit.includes(sel.spirit)) s += 2;
+  if (sel.mixer !== "valfri" && drink.mixer.includes(sel.mixer)) s += 2;
+  return s;
+}
+
+function getSelections() {
+  return {
+    mood: document.querySelector('.chip[data-group="mood"].active')?.dataset.value || "valfri",
+    spirit: document.querySelector('.chip[data-group="spirit"].active')?.dataset.value || "valfri",
+    mixer: document.querySelector('.chip[data-group="mixer"].active')?.dataset.value || "valfri"
+  };
+}
+
+function getDrink() {
+  if (!drinks.length) return;
+  const sel = getSelections();
+  document.getElementById('result').innerHTML = '<div class="loading"><div class="spinner"></div>Blandar ihop något gott…</div>';
+
+  setTimeout(() => {
+    let scored = drinks.map((d, i) => ({ d, i, s: drinkScore(d, sel) })).filter(x => x.s >= 0);
+    if (!scored.length) {
+      document.getElementById('result').innerHTML = `
+        <div class="no-drinks">
+          <p>😕 Inga drinkar matchar det du har hemma just nu.<br><br>
+          <a onclick="showPage('inventory')">Bocka av fler ingredienser</a> eller ändra filter.</p>
+        </div>`;
+      return;
+    }
+    const maxScore = Math.max(...scored.map(x => x.s));
+    const best = scored.filter(x => x.s === maxScore && x.i !== lastIndex);
+    const pick = best.length ? best[Math.floor(Math.random() * best.length)] : scored[Math.floor(Math.random() * scored.length)];
+    lastIndex = pick.i;
+    showDrink(pick.d);
+  }, 600);
+}
+
+function showDrink(d) {
+  const catClass = catColors[d.cat] || "";
+  const checkedCount = Object.values(inventory).filter(Boolean).length;
+  const ings = d.ingredients.map(ing => {
+    const isIs = ing.toLowerCase().includes('is') || ing.toLowerCase().includes('garnering');
+    const avail = isIs || checkedCount === 0 || ingredientAvailable(ing);
+    return `<li class="${avail ? '' : 'missing'}"><span class="${avail ? 'ing-dot' : 'ing-missing'}"></span>${ing}</li>`;
+  }).join('');
+
+  document.getElementById('result').innerHTML = `
+    <div class="drink-card">
+      <div class="card-header ${catClass}">
+        <div class="card-emoji">${d.emoji}</div>
+        <div class="card-name">${d.name}</div>
+        <div class="card-desc">${d.desc}</div>
+      </div>
+      <div class="card-body">
+        <div class="card-section-title">Ingredienser</div>
+        <ul class="ing-list">${ings}</ul>
+        <div class="card-section-title">Gör så här</div>
+        <ol class="step-list">${d.steps.map(s => `<li>${s}</li>`).join('')}</ol>
+        ${d.tips ? `<div class="tips-box">💡 ${d.tips}</div>` : ''}
+      </div>
+    </div>
+    <button class="again-btn" onclick="getDrink()">🔄 Föreslå en annan</button>`;
+}
+
+function showPage(page) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(`page-${page}`).classList.add('active');
+  document.getElementById(`nav-${page}`).classList.add('active');
+}
+
+// Chip-logik
+document.querySelectorAll('.chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll(`.chip[data-group="${chip.dataset.group}"]`).forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+  });
+});
+
+// Init
+loadInventory();
+renderInventory();
+updateSuggestBtn();
+
+fetch('drinks.json')
+  .then(r => r.json())
+  .then(data => {
+    drinks = data.drinks;
+    document.getElementById('header-sub').textContent = `${drinks.length} recept — Tyresö Midsommar 2026`;
+  })
+  .catch(() => {
+    document.getElementById('header-sub').textContent = 'Kunde inte ladda recept';
+  });
+</script>
+</body>
+</html><!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Midsommar Drinkbar 2026</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
