@@ -1,3 +1,4 @@
+
 {
   "drinks": [
     {
@@ -5,9 +6,18 @@
       "emoji": "🍓",
       "desc": "Krämig, fruktig och söt — Jessicas midsommardrink.",
       "cat": "rosa",
-      "mood": ["krämig", "fräsch"],
-      "spirit": ["likör", "valfri"],
-      "mixer": ["mjölk", "valfri"],
+      "mood": [
+        "krämig",
+        "fräsch"
+      ],
+      "spirit": [
+        "likör",
+        "valfri"
+      ],
+      "mixer": [
+        "mjölk",
+        "valfri"
+      ],
       "ingredients": [
         "40 ml Saturnus Jordgubb & Rabarber",
         "150 ml Rosa Mjölkdryck",
@@ -20,16 +30,25 @@
         "Häll rosa mjölk långsamt för gradient.",
         "Pressa citron, rör och garnera med jordgubbe."
       ],
-      "tips": "Utan citron blir den väldigt söt — smaka av."
+      "tips": "⚠️ Citron + rosa mjölk kan ge lätt flockning. Skippa citronen för säker drink. Byt rosa mjölk mot vanlig eller havre — ingen flockrisk."
     },
     {
       "name": "Rosa Sommar Deluxe",
       "emoji": "🍓🌿",
       "desc": "Jordgubb, rabarber och kanel — jordgubbspaj i ett glas.",
       "cat": "rosa",
-      "mood": ["krämig", "dessert"],
-      "spirit": ["likör", "valfri"],
-      "mixer": ["mjölk", "valfri"],
+      "mood": [
+        "krämig",
+        "dessert"
+      ],
+      "spirit": [
+        "likör",
+        "valfri"
+      ],
+      "mixer": [
+        "mjölk",
+        "valfri"
+      ],
       "ingredients": [
         "30 ml Saturnus Jordgubb & Rabarber",
         "15 ml Bottega Cannella",
@@ -43,16 +62,25 @@
         "Häll rosa mjölk långsamt.",
         "Citron, rör, garnera med jordgubbe + kanelstång."
       ],
-      "tips": "Börja med 10 ml Cannella — kaneln är dominant."
+      "tips": "⚠️ Saturnus innehåller syra — kan flocka med mjölk. Skippa citron. Byt till vanlig mjölk för säkrare variant."
     },
     {
       "name": "Rosa Cannella",
       "emoji": "🍂",
       "desc": "Kanellikörens värme möter söt jordgubbsmjölk.",
       "cat": "rosa",
-      "mood": ["krämig", "dessert"],
-      "spirit": ["likör", "valfri"],
-      "mixer": ["mjölk", "valfri"],
+      "mood": [
+        "krämig",
+        "dessert"
+      ],
+      "spirit": [
+        "likör",
+        "valfri"
+      ],
+      "mixer": [
+        "mjölk",
+        "valfri"
+      ],
       "ingredients": [
         "40 ml Bottega Cannella",
         "150 ml Rosa Mjölkdryck",
@@ -72,9 +100,18 @@
       "emoji": "🐆",
       "desc": "Klassisk Rosa Pantern uppgraderad med jordgubbsmjölk.",
       "cat": "rosa",
-      "mood": ["krämig", "dessert"],
-      "spirit": ["likör", "valfri"],
-      "mixer": ["mjölk", "valfri"],
+      "mood": [
+        "krämig",
+        "dessert"
+      ],
+      "spirit": [
+        "likör",
+        "valfri"
+      ],
+      "mixer": [
+        "mjölk",
+        "valfri"
+      ],
       "ingredients": [
         "40 ml Licor 43",
         "150 ml Rosa Mjölkdryck",
@@ -87,16 +124,25 @@
         "Häll rosa mjölk långsamt.",
         "Rör, garnera."
       ],
-      "tips": null
+      "tips": "Säker med alla mjölksorter — ingen syra. Vanlig mjölk = klassisk Rosa Pantern. Havre = lättare variant."
     },
     {
       "name": "Irish Rosa",
       "emoji": "🍀",
       "desc": "Baileys + kanel + rosa mjölk — flytande Irish cream dessert.",
       "cat": "rosa",
-      "mood": ["krämig", "dessert"],
-      "spirit": ["likör", "valfri"],
-      "mixer": ["mjölk", "valfri"],
+      "mood": [
+        "krämig",
+        "dessert"
+      ],
+      "spirit": [
+        "likör",
+        "valfri"
+      ],
+      "mixer": [
+        "mjölk",
+        "valfri"
+      ],
       "ingredients": [
         "40 ml Baileys Irish Cream",
         "15 ml Bottega Cannella",
@@ -109,16 +155,26 @@
         "Häll rosa mjölk långsamt.",
         "Rör försiktigt."
       ],
-      "tips": "Ingen citron — Baileys kan flocka sig med syra."
+      "tips": "Ingen citron — Baileys flockar med syra. Fungerar med alla mjölksorter."
     },
     {
       "name": "Jessicas Midsommar",
       "emoji": "🌸",
       "desc": "Jessicas drink — söt, fruktig och bubblig. Ingen mjölk, skär sig aldrig.",
       "cat": "rosa",
-      "mood": ["fräsch", "krämig", "fest"],
-      "spirit": ["likör", "valfri"],
-      "mixer": ["bubbel", "valfri"],
+      "mood": [
+        "fräsch",
+        "krämig",
+        "fest"
+      ],
+      "spirit": [
+        "likör",
+        "valfri"
+      ],
+      "mixer": [
+        "bubbel",
+        "valfri"
+      ],
       "ingredients": [
         "40 ml Licor 43",
         "20 ml Saturnus Jordgubb & Rabarber",
@@ -138,9 +194,19 @@
       "emoji": "🐆🍦",
       "desc": "Licor 43 + grädde — match made in heaven.",
       "cat": "cream",
-      "mood": ["krämig", "dessert"],
-      "spirit": ["likör", "valfri"],
-      "mixer": ["grädde", "mjölk", "valfri"],
+      "mood": [
+        "krämig",
+        "dessert"
+      ],
+      "spirit": [
+        "likör",
+        "valfri"
+      ],
+      "mixer": [
+        "grädde",
+        "mjölk",
+        "valfri"
+      ],
       "ingredients": [
         "40 ml Licor 43",
         "80 ml Rosa Mjölkdryck",
@@ -153,16 +219,26 @@
         "Skaka kraftigt 10 sek.",
         "Sila i glas, garnera."
       ],
-      "tips": "Häll vispad grädde på toppen och drick igenom!"
+      "tips": "Säker med alla mjölksorter + grädde. Grädde på toppen — drick igenom!"
     },
     {
       "name": "Irish Rosa Cream",
       "emoji": "🍀🍦",
       "desc": "Baileys + kanel + grädde — flytande Irish coffee dessert.",
       "cat": "cream",
-      "mood": ["krämig", "dessert"],
-      "spirit": ["likör", "valfri"],
-      "mixer": ["grädde", "mjölk", "valfri"],
+      "mood": [
+        "krämig",
+        "dessert"
+      ],
+      "spirit": [
+        "likör",
+        "valfri"
+      ],
+      "mixer": [
+        "grädde",
+        "mjölk",
+        "valfri"
+      ],
       "ingredients": [
         "40 ml Baileys Irish Cream",
         "15 ml Bottega Cannella",
@@ -176,16 +252,26 @@
         "Skaka kraftigt 10 sek.",
         "Sila i glas, toppa med choklad."
       ],
-      "tips": "Ingen citron — Baileys + grädde + syra kan flocka sig."
+      "tips": "Ingen citron — Baileys + grädde + syra flockar. Grädde är stabilare än mjölk."
     },
     {
       "name": "Mörk Tryffel Cream",
       "emoji": "🍫🍦",
       "desc": "Rom, choklad, kanel och grädde — odödlig kombination.",
       "cat": "cream",
-      "mood": ["dessert", "stark"],
-      "spirit": ["rom", "valfri"],
-      "mixer": ["grädde", "mjölk", "valfri"],
+      "mood": [
+        "dessert",
+        "stark"
+      ],
+      "spirit": [
+        "rom",
+        "valfri"
+      ],
+      "mixer": [
+        "grädde",
+        "mjölk",
+        "valfri"
+      ],
       "ingredients": [
         "30 ml Plantation Original Dark",
         "20 ml Bols Cacao Brown",
@@ -200,16 +286,25 @@
         "Skaka kraftigt 10 sek.",
         "Sila i glas, garnera med choklad + kanelstång."
       ],
-      "tips": "Servera i litet glas — mycket mäktig."
+      "tips": "Säker med alla mjölksorter + grädde. Servera i litet glas — mycket mäktig."
     },
     {
       "name": "Rosa Tryffel",
       "emoji": "🍫",
       "desc": "Choklad, kanel och jordgubb — som en flytande pralin.",
       "cat": "choklad",
-      "mood": ["dessert", "krämig"],
-      "spirit": ["vodka", "valfri"],
-      "mixer": ["mjölk", "valfri"],
+      "mood": [
+        "dessert",
+        "krämig"
+      ],
+      "spirit": [
+        "vodka",
+        "valfri"
+      ],
+      "mixer": [
+        "mjölk",
+        "valfri"
+      ],
       "ingredients": [
         "30 ml Rushkinoff Vodka",
         "20 ml Bottega Cannella",
@@ -231,9 +326,18 @@
       "emoji": "🍫🥃",
       "desc": "Mörk rom, kanel och choklad — djup och varm.",
       "cat": "choklad",
-      "mood": ["stark", "dessert"],
-      "spirit": ["rom", "valfri"],
-      "mixer": ["mjölk", "valfri"],
+      "mood": [
+        "stark",
+        "dessert"
+      ],
+      "spirit": [
+        "rom",
+        "valfri"
+      ],
+      "mixer": [
+        "mjölk",
+        "valfri"
+      ],
       "ingredients": [
         "30 ml Plantation Original Dark",
         "20 ml Bottega Cannella",
@@ -247,16 +351,26 @@
         "Häll rosa mjölk långsamt.",
         "Rör, toppa med riven choklad."
       ],
-      "tips": null
+      "tips": "Säker med alla mjölksorter. Vanlig mjölk ger renare romsmak, rosa mjölk ger fruktig twist."
     },
     {
       "name": "Mörk Irish",
       "emoji": "🍀🍫",
       "desc": "Baileys, mörk choklad och Plantation — rik dessertdrink.",
       "cat": "choklad",
-      "mood": ["dessert", "stark"],
-      "spirit": ["rom", "likör", "valfri"],
-      "mixer": ["mjölk", "valfri"],
+      "mood": [
+        "dessert",
+        "stark"
+      ],
+      "spirit": [
+        "rom",
+        "likör",
+        "valfri"
+      ],
+      "mixer": [
+        "mjölk",
+        "valfri"
+      ],
       "ingredients": [
         "35 ml Baileys Irish Cream",
         "20 ml Bols Cacao Brown",
@@ -276,9 +390,18 @@
       "emoji": "🌴",
       "desc": "Kubansk rom, jordgubb-rabarber och rosa mjölk — tropisk.",
       "cat": "rom",
-      "mood": ["fräsch", "krämig"],
-      "spirit": ["rom", "valfri"],
-      "mixer": ["mjölk", "valfri"],
+      "mood": [
+        "fräsch",
+        "krämig"
+      ],
+      "spirit": [
+        "rom",
+        "valfri"
+      ],
+      "mixer": [
+        "mjölk",
+        "valfri"
+      ],
       "ingredients": [
         "40 ml Havana Club 3 Años",
         "25 ml Saturnus Jordgubb & Rabarber",
@@ -293,16 +416,24 @@
         "Häll rosa mjölk långsamt.",
         "Rör, garnera."
       ],
-      "tips": null
+      "tips": "⚠️ Använd INTE citron med mjölk — flockar. Skippa citronen om du blandar med mjölk. Utan mjölk kan du ha citron."
     },
     {
       "name": "Havana Fizz",
       "emoji": "🌴🫧",
       "desc": "Kubansk rom, jordgubb och 7UP — lätt och friskt.",
       "cat": "rom",
-      "mood": ["fräsch"],
-      "spirit": ["rom", "valfri"],
-      "mixer": ["bubbel", "valfri"],
+      "mood": [
+        "fräsch"
+      ],
+      "spirit": [
+        "rom",
+        "valfri"
+      ],
+      "mixer": [
+        "bubbel",
+        "valfri"
+      ],
       "ingredients": [
         "40 ml Havana Club 3 Años",
         "20 ml Saturnus Jordgubb & Rabarber",
@@ -323,9 +454,18 @@
       "emoji": "🫚🌶️",
       "desc": "Rom och ingefärsbeer — kryddig och frisk som en Caribbean Mule.",
       "cat": "rom",
-      "mood": ["fräsch", "stark"],
-      "spirit": ["rom", "valfri"],
-      "mixer": ["bubbel", "valfri"],
+      "mood": [
+        "fräsch",
+        "stark"
+      ],
+      "spirit": [
+        "rom",
+        "valfri"
+      ],
+      "mixer": [
+        "bubbel",
+        "valfri"
+      ],
       "ingredients": [
         "40 ml Havana Club 3 Años",
         "1 flaska Ginger Joe (ingefärsbeer)",
@@ -345,9 +485,17 @@
       "emoji": "🥃🌃",
       "desc": "Mörk rom, vanilj och cola — lyxig Cuba Libre.",
       "cat": "rom",
-      "mood": ["stark"],
-      "spirit": ["rom", "valfri"],
-      "mixer": ["cola", "valfri"],
+      "mood": [
+        "stark"
+      ],
+      "spirit": [
+        "rom",
+        "valfri"
+      ],
+      "mixer": [
+        "cola",
+        "valfri"
+      ],
       "ingredients": [
         "40 ml Plantation Original Dark",
         "20 ml Licor 43",
@@ -367,9 +515,18 @@
       "emoji": "🍂🥤",
       "desc": "Vodka, kanel och cola — oväntat gott.",
       "cat": "vodka",
-      "mood": ["stark", "fräsch"],
-      "spirit": ["vodka", "valfri"],
-      "mixer": ["cola", "valfri"],
+      "mood": [
+        "stark",
+        "fräsch"
+      ],
+      "spirit": [
+        "vodka",
+        "valfri"
+      ],
+      "mixer": [
+        "cola",
+        "valfri"
+      ],
       "ingredients": [
         "35 ml Rushkinoff Vodka",
         "20 ml Bottega Cannella",
@@ -388,9 +545,18 @@
       "emoji": "🍒🌴",
       "desc": "Kubansk rom och röda bär — lätt, friskt och somrigt.",
       "cat": "rom",
-      "mood": ["fräsch", "fest"],
-      "spirit": ["rom", "valfri"],
-      "mixer": ["bubbel", "valfri"],
+      "mood": [
+        "fräsch",
+        "fest"
+      ],
+      "spirit": [
+        "rom",
+        "valfri"
+      ],
+      "mixer": [
+        "bubbel",
+        "valfri"
+      ],
       "ingredients": [
         "40 ml Havana Club 3 Años",
         "20 ml Saturnus Jordgubb & Rabarber",
@@ -411,9 +577,17 @@
       "emoji": "🌿🍓",
       "desc": "Klassisk G&T med jordgubb och rabarber — sommartwist.",
       "cat": "gin",
-      "mood": ["fräsch"],
-      "spirit": ["gin", "valfri"],
-      "mixer": ["tonic", "valfri"],
+      "mood": [
+        "fräsch"
+      ],
+      "spirit": [
+        "gin",
+        "valfri"
+      ],
+      "mixer": [
+        "tonic",
+        "valfri"
+      ],
       "ingredients": [
         "40 ml Gibson's London Dry Gin",
         "20 ml Saturnus Jordgubb & Rabarber",
@@ -434,9 +608,18 @@
       "emoji": "🌿🍂",
       "desc": "Gin med varm kanelton och torr tonic — elegant.",
       "cat": "gin",
-      "mood": ["fräsch", "stark"],
-      "spirit": ["gin", "valfri"],
-      "mixer": ["tonic", "valfri"],
+      "mood": [
+        "fräsch",
+        "stark"
+      ],
+      "spirit": [
+        "gin",
+        "valfri"
+      ],
+      "mixer": [
+        "tonic",
+        "valfri"
+      ],
       "ingredients": [
         "40 ml Gibson's London Dry Gin",
         "20 ml Bottega Cannella",
@@ -456,9 +639,19 @@
       "emoji": "🌿🌸",
       "desc": "Gin, jordgubb-rabarber och rosa lemonad — dubbelt rosa.",
       "cat": "gin",
-      "mood": ["fräsch", "fest"],
-      "spirit": ["gin", "valfri"],
-      "mixer": ["bubbel", "tonic", "valfri"],
+      "mood": [
+        "fräsch",
+        "fest"
+      ],
+      "spirit": [
+        "gin",
+        "valfri"
+      ],
+      "mixer": [
+        "bubbel",
+        "tonic",
+        "valfri"
+      ],
       "ingredients": [
         "40 ml Gibson's London Dry Gin",
         "20 ml Saturnus Jordgubb & Rabarber",
@@ -478,9 +671,18 @@
       "emoji": "🌸🫧",
       "desc": "Gin och jordgubb med Pink 7UP — friskt och bubbligt.",
       "cat": "gin",
-      "mood": ["fräsch", "fest"],
-      "spirit": ["gin", "valfri"],
-      "mixer": ["bubbel", "valfri"],
+      "mood": [
+        "fräsch",
+        "fest"
+      ],
+      "spirit": [
+        "gin",
+        "valfri"
+      ],
+      "mixer": [
+        "bubbel",
+        "valfri"
+      ],
       "ingredients": [
         "40 ml Gibson's London Dry Gin",
         "25 ml Saturnus Jordgubb & Rabarber",
@@ -500,9 +702,18 @@
       "emoji": "💙🌿",
       "desc": "Gin, Bar King Blue Curaçao och tonic — turkosblå och elegant.",
       "cat": "gin",
-      "mood": ["fräsch", "fest"],
-      "spirit": ["gin", "valfri"],
-      "mixer": ["tonic", "valfri"],
+      "mood": [
+        "fräsch",
+        "fest"
+      ],
+      "spirit": [
+        "gin",
+        "valfri"
+      ],
+      "mixer": [
+        "tonic",
+        "valfri"
+      ],
       "ingredients": [
         "40 ml Gibson's London Dry Gin",
         "15 ml Bar King Blue Curaçao (alkoholfri mixer)",
@@ -522,9 +733,18 @@
       "emoji": "🍒🌿",
       "desc": "Gin och röda bär — fruktigare och bärfylligare än vanlig tonic.",
       "cat": "gin",
-      "mood": ["fräsch", "fest"],
-      "spirit": ["gin", "valfri"],
-      "mixer": ["bubbel", "valfri"],
+      "mood": [
+        "fräsch",
+        "fest"
+      ],
+      "spirit": [
+        "gin",
+        "valfri"
+      ],
+      "mixer": [
+        "bubbel",
+        "valfri"
+      ],
       "ingredients": [
         "40 ml Gibson's London Dry Gin",
         "20 ml Saturnus Jordgubb & Rabarber",
@@ -544,9 +764,18 @@
       "emoji": "🔮",
       "desc": "Bar King Blue + rosa mjölk = lila! Spektakulärt och gott.",
       "cat": "lila",
-      "mood": ["fest", "krämig"],
-      "spirit": ["vodka", "valfri"],
-      "mixer": ["mjölk", "valfri"],
+      "mood": [
+        "fest",
+        "krämig"
+      ],
+      "spirit": [
+        "vodka",
+        "valfri"
+      ],
+      "mixer": [
+        "mjölk",
+        "valfri"
+      ],
       "ingredients": [
         "30 ml Rushkinoff Vodka",
         "15 ml Bar King Blue Curaçao (alkoholfri mixer)",
@@ -566,9 +795,19 @@
       "emoji": "🔮🍦",
       "desc": "Tre lager: lila botten, rosa mitt, vit gräddetopp. Instagramvärdigt.",
       "cat": "lila",
-      "mood": ["fest", "dessert"],
-      "spirit": ["vodka", "valfri"],
-      "mixer": ["grädde", "mjölk", "valfri"],
+      "mood": [
+        "fest",
+        "dessert"
+      ],
+      "spirit": [
+        "vodka",
+        "valfri"
+      ],
+      "mixer": [
+        "grädde",
+        "mjölk",
+        "valfri"
+      ],
       "ingredients": [
         "30 ml Rushkinoff Vodka",
         "15 ml Bar King Blue Curaçao (alkoholfri mixer)",
@@ -590,9 +829,18 @@
       "emoji": "🌿🌸",
       "desc": "Jäger, Licor 43 och rosa mjölk — örter möter vanilj. Törs du?",
       "cat": "rosa",
-      "mood": ["stark", "fest"],
-      "spirit": ["likör", "valfri"],
-      "mixer": ["mjölk", "valfri"],
+      "mood": [
+        "stark",
+        "fest"
+      ],
+      "spirit": [
+        "likör",
+        "valfri"
+      ],
+      "mixer": [
+        "mjölk",
+        "valfri"
+      ],
       "ingredients": [
         "25 ml Jägermeister",
         "25 ml Licor 43",
@@ -605,6 +853,256 @@
         "Häll rosa mjölk långsamt, rör."
       ],
       "tips": "Börja med 15 ml Jäger — örterna är dominanta."
+    },
+    {
+      "name": "Rosa Pantern Klassisk",
+      "emoji": "🐆🥛",
+      "desc": "Klassisk Rosa Pantern — Licor 43 och vanlig mjölk. Enkel, krämig och god.",
+      "cat": "rosa",
+      "mood": [
+        "krämig",
+        "dessert"
+      ],
+      "spirit": [
+        "likör",
+        "valfri"
+      ],
+      "mixer": [
+        "mjölk",
+        "valfri"
+      ],
+      "ingredients": [
+        "40 ml Licor 43",
+        "150 ml vanlig mjölk",
+        "Is",
+        "Kanelstång"
+      ],
+      "steps": [
+        "Fyll glas med is.",
+        "Häll Licor 43.",
+        "Häll mjölken långsamt. Garnera med kanelstång."
+      ],
+      "tips": null
+    },
+    {
+      "name": "Oat Irish",
+      "emoji": "🍀🌾",
+      "desc": "Havremjölk + Baileys + kanel — mjukare och nötaktig karaktär.",
+      "cat": "cream",
+      "mood": [
+        "krämig",
+        "dessert"
+      ],
+      "spirit": [
+        "likör",
+        "valfri"
+      ],
+      "mixer": [
+        "mjölk",
+        "valfri"
+      ],
+      "ingredients": [
+        "40 ml Baileys Irish Cream",
+        "15 ml Bottega Cannella",
+        "150 ml havremjölk",
+        "Is",
+        "Riven choklad"
+      ],
+      "steps": [
+        "Fyll glas med is.",
+        "Häll Baileys och Cannella.",
+        "Häll havremjölken långsamt. Toppa med riven choklad."
+      ],
+      "tips": "Ingen citron — Baileys kan flocka sig med syra."
+    },
+    {
+      "name": "Oat Russian",
+      "emoji": "🌾🥃",
+      "desc": "Havremjölk White Russian — vodka, Licor 43 och havremjölk. Len och lätt.",
+      "cat": "vodka",
+      "mood": [
+        "krämig",
+        "stark"
+      ],
+      "spirit": [
+        "vodka",
+        "valfri"
+      ],
+      "mixer": [
+        "mjölk",
+        "valfri"
+      ],
+      "ingredients": [
+        "40 ml Rushkinoff Vodka",
+        "20 ml Licor 43",
+        "120 ml havremjölk",
+        "Is"
+      ],
+      "steps": [
+        "Fyll glas med is.",
+        "Häll vodka och Licor 43.",
+        "Häll havremjölken långsamt för gradient."
+      ],
+      "tips": "Byt Licor 43 mot Bols Cacao Brown för chokladvariant."
+    },
+    {
+      "name": "Rosa Pantern Original",
+      "emoji": "🐆",
+      "desc": "Den riktiga originalet — Licor 43 och vanlig mjölk. Inga krångel.",
+      "cat": "rosa",
+      "mood": [
+        "krämig",
+        "dessert"
+      ],
+      "spirit": [
+        "likör",
+        "valfri"
+      ],
+      "mixer": [
+        "mjölk",
+        "valfri"
+      ],
+      "ingredients": [
+        "40 ml Licor 43",
+        "150 ml vanlig mjölk",
+        "Is",
+        "Kanelstång"
+      ],
+      "steps": [
+        "Fyll glas med is.",
+        "Häll Licor 43.",
+        "Häll mjölken långsamt. Garnera med kanelstång."
+      ],
+      "tips": "Säker med alla mjölksorter — ingen syra. Klassisk med vanlig mjölk, rosa mjölk ger jordgubbstwist, havre ger lättare variant.",
+      "milk_safe": true
+    },
+    {
+      "name": "Cannella Mjölk",
+      "emoji": "🍂🥛",
+      "desc": "Kanellikör och vanlig mjölk — som en kanelbullesoppa i ett glas.",
+      "cat": "rosa",
+      "mood": [
+        "krämig",
+        "dessert"
+      ],
+      "spirit": [
+        "likör",
+        "valfri"
+      ],
+      "mixer": [
+        "mjölk",
+        "valfri"
+      ],
+      "ingredients": [
+        "40 ml Bottega Cannella",
+        "150 ml vanlig mjölk",
+        "Is",
+        "Kanelstång"
+      ],
+      "steps": [
+        "Fyll glas med is.",
+        "Häll Cannella.",
+        "Häll mjölken långsamt. Garnera."
+      ],
+      "tips": "Säker med alla mjölksorter. Vanlig mjölk = renast kanel. Rosa mjölk = jordgubb + kanel. Havre = nötaktig kanel.",
+      "milk_safe": true
+    },
+    {
+      "name": "Dark & Milky",
+      "emoji": "🥃🥛",
+      "desc": "Plantation Dark och vanlig mjölk — mörk rom möter krämig mjölk. Enkelt och gott.",
+      "cat": "rom",
+      "mood": [
+        "krämig",
+        "stark"
+      ],
+      "spirit": [
+        "rom",
+        "valfri"
+      ],
+      "mixer": [
+        "mjölk",
+        "valfri"
+      ],
+      "ingredients": [
+        "40 ml Plantation Original Dark",
+        "20 ml Licor 43",
+        "130 ml vanlig mjölk",
+        "Is"
+      ],
+      "steps": [
+        "Fyll glas med is.",
+        "Häll Plantation och Licor 43.",
+        "Häll mjölken långsamt för gradient."
+      ],
+      "tips": "Säker med alla mjölksorter. Ingen syra — ingen flockrisk. Havre ger extra nötaktig ton till rommen.",
+      "milk_safe": true
+    },
+    {
+      "name": "Havre Tryffel",
+      "emoji": "🌾🍫",
+      "desc": "Havremjölk + choklad + kanel — lättare och nötaktigare än rosa mjölk-versionen.",
+      "cat": "choklad",
+      "mood": [
+        "krämig",
+        "dessert"
+      ],
+      "spirit": [
+        "vodka",
+        "valfri"
+      ],
+      "mixer": [
+        "mjölk",
+        "valfri"
+      ],
+      "ingredients": [
+        "30 ml Rushkinoff Vodka",
+        "20 ml Bottega Cannella",
+        "20 ml Bols Cacao Brown",
+        "130 ml havremjölk",
+        "Is",
+        "Riven choklad"
+      ],
+      "steps": [
+        "Häll Cacao Brown i botten med is.",
+        "Tillsätt vodka och Cannella.",
+        "Häll havremjölken långsamt.",
+        "Rör, toppa med riven choklad."
+      ],
+      "tips": "Säker — ingen syra. Havremjölk är tunnare, ger lättare känsla än rosa mjölk.",
+      "milk_safe": true
+    },
+    {
+      "name": "Grädde & Rom",
+      "emoji": "🥃🍦",
+      "desc": "Plantation Dark + Licor 43 + grädde — lyxig och rik dessertdrink.",
+      "cat": "cream",
+      "mood": [
+        "dessert",
+        "stark"
+      ],
+      "spirit": [
+        "rom",
+        "valfri"
+      ],
+      "mixer": [
+        "grädde",
+        "valfri"
+      ],
+      "ingredients": [
+        "40 ml Plantation Original Dark",
+        "20 ml Licor 43",
+        "80 ml vispgrädde",
+        "Is",
+        "Riven choklad"
+      ],
+      "steps": [
+        "Häll allt i shaker med is.",
+        "Skaka kraftigt 10 sek.",
+        "Sila i glas, toppa med choklad."
+      ],
+      "tips": "Grädde är stabilare än mjölk — säker med alla likörer. Mäktig drink, servera i litet glas.",
+      "milk_safe": true
     }
   ]
 }
