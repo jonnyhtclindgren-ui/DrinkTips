@@ -1,0 +1,610 @@
+{
+  "drinks": [
+    {
+      "name": "Rosa Sommar",
+      "emoji": "🍓",
+      "desc": "Krämig, fruktig och söt — Jessicas midsommardrink.",
+      "cat": "rosa",
+      "mood": ["krämig", "fräsch"],
+      "spirit": ["likör", "valfri"],
+      "mixer": ["mjölk", "valfri"],
+      "ingredients": [
+        "40 ml Saturnus Jordgubb & Rabarber",
+        "150 ml Rosa Mjölkdryck",
+        "1 tsk citronjuice",
+        "Is"
+      ],
+      "steps": [
+        "Fyll ett högt glas med is.",
+        "Häll Saturnus över isen.",
+        "Häll rosa mjölk långsamt för gradient.",
+        "Pressa citron, rör och garnera med jordgubbe."
+      ],
+      "tips": "Utan citron blir den väldigt söt — smaka av."
+    },
+    {
+      "name": "Rosa Sommar Deluxe",
+      "emoji": "🍓🌿",
+      "desc": "Jordgubb, rabarber och kanel — jordgubbspaj i ett glas.",
+      "cat": "rosa",
+      "mood": ["krämig", "dessert"],
+      "spirit": ["likör", "valfri"],
+      "mixer": ["mjölk", "valfri"],
+      "ingredients": [
+        "30 ml Saturnus Jordgubb & Rabarber",
+        "15 ml Bottega Cannella",
+        "150 ml Rosa Mjölkdryck",
+        "1 tsk citronjuice",
+        "Is"
+      ],
+      "steps": [
+        "Fyll glas med is.",
+        "Häll Saturnus och Cannella.",
+        "Häll rosa mjölk långsamt.",
+        "Citron, rör, garnera med jordgubbe + kanelstång."
+      ],
+      "tips": "Börja med 10 ml Cannella — kaneln är dominant."
+    },
+    {
+      "name": "Rosa Cannella",
+      "emoji": "🍂",
+      "desc": "Kanellikörens värme möter söt jordgubbsmjölk.",
+      "cat": "rosa",
+      "mood": ["krämig", "dessert"],
+      "spirit": ["likör", "valfri"],
+      "mixer": ["mjölk", "valfri"],
+      "ingredients": [
+        "40 ml Bottega Cannella",
+        "150 ml Rosa Mjölkdryck",
+        "1 tsk citronjuice",
+        "Is"
+      ],
+      "steps": [
+        "Fyll glas med is.",
+        "Häll Cannella.",
+        "Häll rosa mjölk långsamt.",
+        "Citron, rör, garnera med kanelstång."
+      ],
+      "tips": "Skippa citronen för ren dessertsmak."
+    },
+    {
+      "name": "Rosa Pantern Sommar",
+      "emoji": "🐆",
+      "desc": "Klassisk Rosa Pantern uppgraderad med jordgubbsmjölk.",
+      "cat": "rosa",
+      "mood": ["krämig", "dessert"],
+      "spirit": ["likör", "valfri"],
+      "mixer": ["mjölk", "valfri"],
+      "ingredients": [
+        "40 ml Licor 43",
+        "150 ml Rosa Mjölkdryck",
+        "Is",
+        "Kanelstång"
+      ],
+      "steps": [
+        "Fyll glas med is.",
+        "Häll Licor 43.",
+        "Häll rosa mjölk långsamt.",
+        "Rör, garnera."
+      ],
+      "tips": null
+    },
+    {
+      "name": "Irish Rosa",
+      "emoji": "🍀",
+      "desc": "Baileys + kanel + rosa mjölk — flytande Irish cream dessert.",
+      "cat": "rosa",
+      "mood": ["krämig", "dessert"],
+      "spirit": ["likör", "valfri"],
+      "mixer": ["mjölk", "valfri"],
+      "ingredients": [
+        "40 ml Baileys Irish Cream",
+        "15 ml Bottega Cannella",
+        "120 ml Rosa Mjölkdryck",
+        "Is"
+      ],
+      "steps": [
+        "Fyll glas med is.",
+        "Häll Baileys och Cannella.",
+        "Häll rosa mjölk långsamt.",
+        "Rör försiktigt."
+      ],
+      "tips": "Ingen citron — Baileys kan flocka sig med syra."
+    },
+    {
+      "name": "Jessicas Midsommar",
+      "emoji": "🌸",
+      "desc": "Jessicas drink — söt, fruktig och bubblig. Ingen mjölk, skär sig aldrig.",
+      "cat": "rosa",
+      "mood": ["fräsch", "krämig", "fest"],
+      "spirit": ["likör", "valfri"],
+      "mixer": ["bubbel", "valfri"],
+      "ingredients": [
+        "40 ml Licor 43",
+        "20 ml Saturnus Jordgubb & Rabarber",
+        "150 ml 7UP Zero Pink Lemonade",
+        "Is"
+      ],
+      "steps": [
+        "Fyll glas med is.",
+        "Häll Licor 43 och Saturnus.",
+        "Toppa försiktigt med Pink 7UP längs kanten.",
+        "Rör ett par varv."
+      ],
+      "tips": "Ingen citron, ingen mjölk — skär sig aldrig. Vill du ha mer alkohol: lägg till 20 ml Saturnus extra."
+    },
+    {
+      "name": "Rosa Pantern Cream",
+      "emoji": "🐆🍦",
+      "desc": "Licor 43 + grädde — match made in heaven.",
+      "cat": "cream",
+      "mood": ["krämig", "dessert"],
+      "spirit": ["likör", "valfri"],
+      "mixer": ["grädde", "mjölk", "valfri"],
+      "ingredients": [
+        "40 ml Licor 43",
+        "80 ml Rosa Mjölkdryck",
+        "60 ml vispgrädde",
+        "Is",
+        "Kanelstång"
+      ],
+      "steps": [
+        "Häll allt i shaker med is.",
+        "Skaka kraftigt 10 sek.",
+        "Sila i glas, garnera."
+      ],
+      "tips": "Häll vispad grädde på toppen och drick igenom!"
+    },
+    {
+      "name": "Irish Rosa Cream",
+      "emoji": "🍀🍦",
+      "desc": "Baileys + kanel + grädde — flytande Irish coffee dessert.",
+      "cat": "cream",
+      "mood": ["krämig", "dessert"],
+      "spirit": ["likör", "valfri"],
+      "mixer": ["grädde", "mjölk", "valfri"],
+      "ingredients": [
+        "40 ml Baileys Irish Cream",
+        "15 ml Bottega Cannella",
+        "80 ml Rosa Mjölkdryck",
+        "50 ml vispgrädde",
+        "Is",
+        "Riven choklad"
+      ],
+      "steps": [
+        "Häll allt i shaker med is.",
+        "Skaka kraftigt 10 sek.",
+        "Sila i glas, toppa med choklad."
+      ],
+      "tips": "Ingen citron — Baileys + grädde + syra kan flocka sig."
+    },
+    {
+      "name": "Mörk Tryffel Cream",
+      "emoji": "🍫🍦",
+      "desc": "Rom, choklad, kanel och grädde — odödlig kombination.",
+      "cat": "cream",
+      "mood": ["dessert", "stark"],
+      "spirit": ["rom", "valfri"],
+      "mixer": ["grädde", "mjölk", "valfri"],
+      "ingredients": [
+        "30 ml Plantation Original Dark",
+        "20 ml Bols Cacao Brown",
+        "15 ml Bottega Cannella",
+        "80 ml Rosa Mjölkdryck",
+        "60 ml vispgrädde",
+        "Is",
+        "Riven choklad + kanelstång"
+      ],
+      "steps": [
+        "Häll allt i shaker med is.",
+        "Skaka kraftigt 10 sek.",
+        "Sila i glas, garnera med choklad + kanelstång."
+      ],
+      "tips": "Servera i litet glas — mycket mäktig."
+    },
+    {
+      "name": "Rosa Tryffel",
+      "emoji": "🍫",
+      "desc": "Choklad, kanel och jordgubb — som en flytande pralin.",
+      "cat": "choklad",
+      "mood": ["dessert", "krämig"],
+      "spirit": ["vodka", "valfri"],
+      "mixer": ["mjölk", "valfri"],
+      "ingredients": [
+        "30 ml Rushkinoff Vodka",
+        "20 ml Bottega Cannella",
+        "20 ml Bols Cacao",
+        "120 ml Rosa Mjölkdryck",
+        "Is",
+        "Riven choklad"
+      ],
+      "steps": [
+        "Häll Cacao i botten med is.",
+        "Tillsätt vodka och Cannella.",
+        "Häll rosa mjölk långsamt.",
+        "Rör eller låt lagren vara."
+      ],
+      "tips": "Skaka i shaker för krämigare konsistens."
+    },
+    {
+      "name": "Mörk Tryffel",
+      "emoji": "🍫🥃",
+      "desc": "Mörk rom, kanel och choklad — djup och varm.",
+      "cat": "choklad",
+      "mood": ["stark", "dessert"],
+      "spirit": ["rom", "valfri"],
+      "mixer": ["mjölk", "valfri"],
+      "ingredients": [
+        "30 ml Plantation Original Dark",
+        "20 ml Bottega Cannella",
+        "15 ml Bols Cacao Brown",
+        "120 ml Rosa Mjölkdryck",
+        "Is"
+      ],
+      "steps": [
+        "Häll Cacao Brown i botten med is.",
+        "Tillsätt Plantation och Cannella.",
+        "Häll rosa mjölk långsamt.",
+        "Rör, toppa med riven choklad."
+      ],
+      "tips": null
+    },
+    {
+      "name": "Mörk Irish",
+      "emoji": "🍀🍫",
+      "desc": "Baileys, mörk choklad och Plantation — rik dessertdrink.",
+      "cat": "choklad",
+      "mood": ["dessert", "stark"],
+      "spirit": ["rom", "likör", "valfri"],
+      "mixer": ["mjölk", "valfri"],
+      "ingredients": [
+        "35 ml Baileys Irish Cream",
+        "20 ml Bols Cacao Brown",
+        "20 ml Plantation Original Dark",
+        "100 ml Rosa Mjölkdryck",
+        "Is"
+      ],
+      "steps": [
+        "Häll allt i shaker med is.",
+        "Skaka kraftigt 10 sek.",
+        "Sila i glas, toppa med riven choklad."
+      ],
+      "tips": "Servera i litet glas — tung och mäktig."
+    },
+    {
+      "name": "Kubansk Sommar",
+      "emoji": "🌴",
+      "desc": "Kubansk rom, jordgubb-rabarber och rosa mjölk — tropisk.",
+      "cat": "rom",
+      "mood": ["fräsch", "krämig"],
+      "spirit": ["rom", "valfri"],
+      "mixer": ["mjölk", "valfri"],
+      "ingredients": [
+        "40 ml Havana Club 3 Años",
+        "25 ml Saturnus Jordgubb & Rabarber",
+        "120 ml Rosa Mjölkdryck",
+        "1 tsk citronjuice",
+        "Is",
+        "Jordgubbe"
+      ],
+      "steps": [
+        "Fyll glas med is och pressa citron.",
+        "Häll Havana Club och Saturnus.",
+        "Häll rosa mjölk långsamt.",
+        "Rör, garnera."
+      ],
+      "tips": null
+    },
+    {
+      "name": "Havana Fizz",
+      "emoji": "🌴🫧",
+      "desc": "Kubansk rom, jordgubb och 7UP — lätt och friskt.",
+      "cat": "rom",
+      "mood": ["fräsch"],
+      "spirit": ["rom", "valfri"],
+      "mixer": ["bubbel", "valfri"],
+      "ingredients": [
+        "40 ml Havana Club 3 Años",
+        "20 ml Saturnus Jordgubb & Rabarber",
+        "120 ml 7UP",
+        "1 tsk citronjuice",
+        "Is",
+        "Jordgubbe"
+      ],
+      "steps": [
+        "Fyll glas med is och pressa citron.",
+        "Häll Havana Club och Saturnus.",
+        "Toppa med 7UP, rör försiktigt."
+      ],
+      "tips": null
+    },
+    {
+      "name": "Caribbean Mule",
+      "emoji": "🫚🌶️",
+      "desc": "Rom och ingefärsbeer — kryddig och frisk som en Caribbean Mule.",
+      "cat": "rom",
+      "mood": ["fräsch", "stark"],
+      "spirit": ["rom", "valfri"],
+      "mixer": ["bubbel", "valfri"],
+      "ingredients": [
+        "40 ml Havana Club 3 Años",
+        "1 flaska Ginger Joe (ingefärsbeer)",
+        "1 tsk citronjuice",
+        "Is",
+        "Citronskiva"
+      ],
+      "steps": [
+        "Fyll högt glas med is och pressa citron.",
+        "Häll Havana Club.",
+        "Toppa med Ginger Joe. Garnera."
+      ],
+      "tips": "Ginger Joe är 4% — räkna med det."
+    },
+    {
+      "name": "Mörk Havana 43",
+      "emoji": "🥃🌃",
+      "desc": "Mörk rom, vanilj och cola — lyxig Cuba Libre.",
+      "cat": "rom",
+      "mood": ["stark"],
+      "spirit": ["rom", "valfri"],
+      "mixer": ["cola", "valfri"],
+      "ingredients": [
+        "40 ml Plantation Original Dark",
+        "20 ml Licor 43",
+        "120 ml Coca-Cola",
+        "1 tsk citronjuice",
+        "Is"
+      ],
+      "steps": [
+        "Fyll glas med is och pressa citron.",
+        "Häll Plantation och Licor 43.",
+        "Toppa med Coca-Cola, rör."
+      ],
+      "tips": null
+    },
+    {
+      "name": "Kanelkola",
+      "emoji": "🍂🥤",
+      "desc": "Vodka, kanel och cola — oväntat gott.",
+      "cat": "vodka",
+      "mood": ["stark", "fräsch"],
+      "spirit": ["vodka", "valfri"],
+      "mixer": ["cola", "valfri"],
+      "ingredients": [
+        "35 ml Rushkinoff Vodka",
+        "20 ml Bottega Cannella",
+        "130 ml Coca-Cola",
+        "Is"
+      ],
+      "steps": [
+        "Fyll glas med is.",
+        "Häll vodka och Cannella.",
+        "Toppa med Coca-Cola, rör."
+      ],
+      "tips": null
+    },
+    {
+      "name": "Russchian Romdrink",
+      "emoji": "🍒🌴",
+      "desc": "Kubansk rom och röda bär — lätt, friskt och somrigt.",
+      "cat": "rom",
+      "mood": ["fräsch", "fest"],
+      "spirit": ["rom", "valfri"],
+      "mixer": ["bubbel", "valfri"],
+      "ingredients": [
+        "40 ml Havana Club 3 Años",
+        "20 ml Saturnus Jordgubb & Rabarber",
+        "150 ml Schweppes Russchian (Red Fruits)",
+        "Is",
+        "Citronskiva"
+      ],
+      "steps": [
+        "Fyll glas med is.",
+        "Häll Havana Club och Saturnus.",
+        "Toppa försiktigt med Russchian.",
+        "Garnera med citronskiva."
+      ],
+      "tips": "Byt Havana Club mot Plantation Dark för djupare romsmak."
+    },
+    {
+      "name": "G&T Midsommar",
+      "emoji": "🌿🍓",
+      "desc": "Klassisk G&T med jordgubb och rabarber — sommartwist.",
+      "cat": "gin",
+      "mood": ["fräsch"],
+      "spirit": ["gin", "valfri"],
+      "mixer": ["tonic", "valfri"],
+      "ingredients": [
+        "40 ml Gibson's London Dry Gin",
+        "20 ml Saturnus Jordgubb & Rabarber",
+        "150 ml Schweppes Indian Tonic",
+        "Is",
+        "Citronskiva"
+      ],
+      "steps": [
+        "Fyll högt glas med is.",
+        "Häll gin och Saturnus.",
+        "Toppa försiktigt med tonic längs kanten.",
+        "Garnera med citronskiva."
+      ],
+      "tips": "Häll tonic längs kanten — bevara kolsyran."
+    },
+    {
+      "name": "G&T Cannella",
+      "emoji": "🌿🍂",
+      "desc": "Gin med varm kanelton och torr tonic — elegant.",
+      "cat": "gin",
+      "mood": ["fräsch", "stark"],
+      "spirit": ["gin", "valfri"],
+      "mixer": ["tonic", "valfri"],
+      "ingredients": [
+        "40 ml Gibson's London Dry Gin",
+        "20 ml Bottega Cannella",
+        "150 ml Schweppes Indian Tonic",
+        "Is",
+        "Kanelstång"
+      ],
+      "steps": [
+        "Fyll högt glas med is.",
+        "Häll gin och Cannella.",
+        "Toppa försiktigt med tonic. Garnera."
+      ],
+      "tips": null
+    },
+    {
+      "name": "G&T Rosa Sommar",
+      "emoji": "🌿🌸",
+      "desc": "Gin, jordgubb-rabarber och rosa lemonad — dubbelt rosa.",
+      "cat": "gin",
+      "mood": ["fräsch", "fest"],
+      "spirit": ["gin", "valfri"],
+      "mixer": ["bubbel", "tonic", "valfri"],
+      "ingredients": [
+        "40 ml Gibson's London Dry Gin",
+        "20 ml Saturnus Jordgubb & Rabarber",
+        "150 ml 7UP Zero Pink Lemonade",
+        "Is",
+        "Jordgubbe"
+      ],
+      "steps": [
+        "Fyll högt glas med is.",
+        "Häll gin och Saturnus.",
+        "Toppa med Pink 7UP. Garnera."
+      ],
+      "tips": null
+    },
+    {
+      "name": "Midsommarbris",
+      "emoji": "🌸🫧",
+      "desc": "Gin och jordgubb med Pink 7UP — friskt och bubbligt.",
+      "cat": "gin",
+      "mood": ["fräsch", "fest"],
+      "spirit": ["gin", "valfri"],
+      "mixer": ["bubbel", "valfri"],
+      "ingredients": [
+        "40 ml Gibson's London Dry Gin",
+        "25 ml Saturnus Jordgubb & Rabarber",
+        "100 ml Pink 7UP",
+        "Is",
+        "Citronskiva"
+      ],
+      "steps": [
+        "Fyll glas med is.",
+        "Häll gin och Saturnus.",
+        "Toppa med Pink 7UP, rör. Garnera."
+      ],
+      "tips": null
+    },
+    {
+      "name": "G&T Blue",
+      "emoji": "💙🌿",
+      "desc": "Gin, Bar King Blue Curaçao och tonic — turkosblå och elegant.",
+      "cat": "gin",
+      "mood": ["fräsch", "fest"],
+      "spirit": ["gin", "valfri"],
+      "mixer": ["tonic", "valfri"],
+      "ingredients": [
+        "40 ml Gibson's London Dry Gin",
+        "15 ml Bar King Blue Curaçao (alkoholfri mixer)",
+        "150 ml Schweppes Indian Tonic",
+        "Is",
+        "Citronskiva"
+      ],
+      "steps": [
+        "Fyll högt glas med is.",
+        "Häll gin och Blue Curaçao mixer.",
+        "Toppa med tonic. Garnera."
+      ],
+      "tips": "Ger vacker turkosblå färg."
+    },
+    {
+      "name": "G&T Russchian",
+      "emoji": "🍒🌿",
+      "desc": "Gin och röda bär — fruktigare och bärfylligare än vanlig tonic.",
+      "cat": "gin",
+      "mood": ["fräsch", "fest"],
+      "spirit": ["gin", "valfri"],
+      "mixer": ["bubbel", "valfri"],
+      "ingredients": [
+        "40 ml Gibson's London Dry Gin",
+        "20 ml Saturnus Jordgubb & Rabarber",
+        "150 ml Schweppes Russchian (Red Fruits)",
+        "Is",
+        "Jordgubbe"
+      ],
+      "steps": [
+        "Fyll högt glas med is.",
+        "Häll gin och Saturnus.",
+        "Toppa försiktigt med Russchian. Garnera."
+      ],
+      "tips": null
+    },
+    {
+      "name": "Lila Magi",
+      "emoji": "🔮",
+      "desc": "Bar King Blue + rosa mjölk = lila! Spektakulärt och gott.",
+      "cat": "lila",
+      "mood": ["fest", "krämig"],
+      "spirit": ["vodka", "valfri"],
+      "mixer": ["mjölk", "valfri"],
+      "ingredients": [
+        "30 ml Rushkinoff Vodka",
+        "15 ml Bar King Blue Curaçao (alkoholfri mixer)",
+        "20 ml Saturnus Jordgubb & Rabarber",
+        "130 ml Rosa Mjölkdryck",
+        "Is"
+      ],
+      "steps": [
+        "Häll vodka, Blue Curaçao och Saturnus i botten med is.",
+        "Häll rosa mjölk mycket långsamt över en sked.",
+        "FOTOGRAFERA FÖRST! Rör sedan för lila färg."
+      ],
+      "tips": "Blå + rosa = lila!"
+    },
+    {
+      "name": "Lila Magi Cream",
+      "emoji": "🔮🍦",
+      "desc": "Tre lager: lila botten, rosa mitt, vit gräddetopp. Instagramvärdigt.",
+      "cat": "lila",
+      "mood": ["fest", "dessert"],
+      "spirit": ["vodka", "valfri"],
+      "mixer": ["grädde", "mjölk", "valfri"],
+      "ingredients": [
+        "30 ml Rushkinoff Vodka",
+        "15 ml Bar King Blue Curaçao (alkoholfri mixer)",
+        "20 ml Saturnus Jordgubb & Rabarber",
+        "100 ml Rosa Mjölkdryck",
+        "50 ml vispgrädde (vispat)",
+        "Is"
+      ],
+      "steps": [
+        "Vispa grädden tills tjock men inte styv.",
+        "Häll vodka, Blue Curaçao och Saturnus i botten med is.",
+        "Häll rosa mjölk långsamt över sked.",
+        "Lägg vispad grädde på toppen. FOTOGRAFERA!"
+      ],
+      "tips": "Tre lager: lila/turkos — rosa — vit. Rör inte förrän du fotograferat!"
+    },
+    {
+      "name": "Vildmarksrosa",
+      "emoji": "🌿🌸",
+      "desc": "Jäger, Licor 43 och rosa mjölk — örter möter vanilj. Törs du?",
+      "cat": "rosa",
+      "mood": ["stark", "fest"],
+      "spirit": ["likör", "valfri"],
+      "mixer": ["mjölk", "valfri"],
+      "ingredients": [
+        "25 ml Jägermeister",
+        "25 ml Licor 43",
+        "150 ml Rosa Mjölkdryck",
+        "Is"
+      ],
+      "steps": [
+        "Fyll glas med is.",
+        "Häll Jäger och Licor 43.",
+        "Häll rosa mjölk långsamt, rör."
+      ],
+      "tips": "Börja med 15 ml Jäger — örterna är dominanta."
+    }
+  ]
+}

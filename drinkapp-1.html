@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Midsommar Drinkbar 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+  :root {
+    --rosa: #E8758A; --mörkrosa: #C2185B; --ljusrosa: #FCE4EC;
+    --cream: #FFF8F2; --mörkbrun: #2A1A1A; --grå: #888;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: var(--cream); min-height: 100vh; color: var(--mörkbrun); }
+  header { background: linear-gradient(135deg, var(--mörkrosa), #8E1445); padding: 2rem 1.5rem 1.5rem; text-align: center; }
+  header h1 { font-family: 'Playfair Display', serif; font-size: 2rem; color: white; }
+  header p { color: rgba(255,255,255,0.75); font-size: 0.85rem; margin-top: 0.4rem; font-weight: 300; }
+  .container { max-width: 480px; margin: 0 auto; padding: 1.5rem 1rem; }
+  .section-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mörkrosa); margin-bottom: 0.7rem; margin-top: 1.4rem; }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .chip { padding: 0.45rem 1rem; border-radius: 99px; border: 1.5px solid #DDD; background: white; font-size: 0.82rem; font-weight: 500; cursor: pointer; transition: all 0.15s; color: var(--mörkbrun); user-select: none; }
+  .chip:hover { border-color: var(--rosa); color: var(--mörkrosa); }
+  .chip.active { background: var(--mörkrosa); border-color: var(--mörkrosa); color: white; }
+  .chip.cat-gin.active { background: #2E7D32; border-color: #2E7D32; }
+  .chip.cat-rom.active { background: #5D4037; border-color: #5D4037; }
+  .chip.cat-lila.active { background: #6A1B9A; border-color: #6A1B9A; }
+  .chip.cat-cream.active { background: #AD1457; border-color: #AD1457; }
+  .chip.cat-neutral.active { background: #455A64; border-color: #455A64; }
+  .suggest-btn { width: 100%; margin-top: 1.5rem; padding: 0.9rem; background: linear-gradient(135deg, var(--mörkrosa), #8E1445); color: white; border: none; border-radius: 12px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: opacity 0.2s, transform 0.1s; font-family: 'Inter', sans-serif; }
+  .suggest-btn:hover { opacity: 0.92; }
+  .suggest-btn:active { transform: scale(0.98); }
+  .result-area { margin-top: 1.5rem; }
+  .drink-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(194,24,91,0.1); animation: slideUp 0.3s ease; }
+  @keyframes slideUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  .card-header { padding: 1.2rem 1.3rem 1rem; background: linear-gradient(135deg, var(--mörkrosa), #8E1445); color: white; }
+  .card-header.gin { background: linear-gradient(135deg, #2E7D32, #1B5E20); }
+  .card-header.rom { background: linear-gradient(135deg, #5D4037, #3E2723); }
+  .card-header.lila { background: linear-gradient(135deg, #6A1B9A, #4A148C); }
+  .card-header.cream { background: linear-gradient(135deg, #AD1457, #880E4F); }
+  .card-emoji { font-size: 1.8rem; margin-bottom: 0.3rem; }
+  .card-name { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; }
+  .card-desc { font-size: 0.8rem; opacity: 0.85; margin-top: 0.3rem; font-weight: 300; line-height: 1.4; }
+  .card-body { padding: 1.2rem 1.3rem; }
+  .card-section-title { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mörkrosa); margin-bottom: 0.5rem; margin-top: 0.9rem; }
+  .card-section-title:first-child { margin-top: 0; }
+  .ing-list { list-style: none; }
+  .ing-list li { font-size: 0.85rem; padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem; border-bottom: 1px solid #F5F5F5; }
+  .ing-list li:last-child { border-bottom: none; }
+  .ing-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--rosa); flex-shrink: 0; }
+  .step-list { list-style: none; counter-reset: steps; }
+  .step-list li { counter-increment: steps; font-size: 0.85rem; padding: 0.3rem 0 0.3rem 1.8rem; position: relative; line-height: 1.4; border-bottom: 1px solid #F5F5F5; }
+  .step-list li:last-child { border-bottom: none; }
+  .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 0.3rem; width: 1.2rem; height: 1.2rem; background: var(--ljusrosa); color: var(--mörkrosa); border-radius: 50%; font-size: 0.65rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  .tips-box { background: var(--ljusrosa); border-radius: 8px; padding: 0.7rem 0.9rem; font-size: 0.8rem; color: var(--mörkrosa); margin-top: 0.9rem; line-height: 1.4; }
+  .again-btn { width: 100%; margin-top: 1rem; padding: 0.7rem; background: white; color: var(--mörkrosa); border: 1.5px solid var(--rosa); border-radius: 10px; font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: all 0.15s; font-family: 'Inter', sans-serif; }
+  .again-btn:hover { background: var(--ljusrosa); }
+  .loading { text-align: center; padding: 2rem; color: var(--grå); font-size: 0.9rem; }
+  .spinner { width: 28px; height: 28px; border: 3px solid var(--ljusrosa); border-top-color: var(--mörkrosa); border-radius: 50%; animation: spin 0.7s linear infinite; margin: 0 auto 0.8rem; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  footer { text-align: center; padding: 2rem 1rem; color: var(--grå); font-size: 0.75rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🌸 Midsommar Drinkbar</h1>
+  <p>Tyresö 2026 — vad vill du ha?</p>
+</header>
+<div class="container">
+  <div class="section-label">Stämning</div>
+  <div class="chips">
+    <div class="chip cat-neutral active" data-group="mood" data-value="fräsch">Fräsch & lätt</div>
+    <div class="chip cat-neutral" data-group="mood" data-value="krämig">Krämig & söt</div>
+    <div class="chip cat-neutral" data-group="mood" data-value="stark">Stark & djup</div>
+    <div class="chip cat-neutral" data-group="mood" data-value="dessert">Dessertdrink</div>
+    <div class="chip cat-neutral" data-group="mood" data-value="fest">Festlig & färgrik</div>
+  </div>
+  <div class="section-label">Bas</div>
+  <div class="chips">
+    <div class="chip active" data-group="spirit" data-value="valfri">Spelar ingen roll</div>
+    <div class="chip cat-rom" data-group="spirit" data-value="rom">Rom 🥃</div>
+    <div class="chip cat-gin" data-group="spirit" data-value="gin">Gin 🌿</div>
+    <div class="chip" data-group="spirit" data-value="vodka">Vodka</div>
+    <div class="chip" data-group="spirit" data-value="likör">Bara likör</div>
+  </div>
+  <div class="section-label">Mixer</div>
+  <div class="chips">
+    <div class="chip active" data-group="mixer" data-value="valfri">Spelar ingen roll</div>
+    <div class="chip" data-group="mixer" data-value="mjölk">Rosa mjölk 🥛</div>
+    <div class="chip" data-group="mixer" data-value="tonic">Tonic</div>
+    <div class="chip" data-group="mixer" data-value="cola">Cola</div>
+    <div class="chip" data-group="mixer" data-value="bubbel">Bubbel/7UP</div>
+    <div class="chip cat-cream" data-group="mixer" data-value="grädde">Med grädde 🍦</div>
+  </div>
+  <button class="suggest-btn" onclick="getDrink()">✨ Föreslå en drink</button>
+  <div class="result-area" id="result"></div>
+</div>
+<footer id="footer">Skål! 🍓 Laddar recept…</footer>
+
+<script>
+let drinks = [];
+let lastIndex = -1;
+const catColors = { gin: "gin", rom: "rom", lila: "lila", cream: "cream" };
+
+// Ladda JSON
+fetch('drinks.json')
+  .then(r => r.json())
+  .then(data => {
+    drinks = data.drinks;
+    document.getElementById('footer').textContent = `Skål! 🍓 ${drinks.length} recept från Midsommar 2026`;
+  })
+  .catch(() => {
+    document.getElementById('footer').textContent = 'Kunde inte ladda recept — kolla att drinks.json ligger i samma mapp.';
+  });
+
+function getSelections() {
+  return {
+    mood: document.querySelector('.chip[data-group="mood"].active')?.dataset.value || "valfri",
+    spirit: document.querySelector('.chip[data-group="spirit"].active')?.dataset.value || "valfri",
+    mixer: document.querySelector('.chip[data-group="mixer"].active')?.dataset.value || "valfri"
+  };
+}
+
+function score(drink, sel) {
+  let s = 0;
+  if (drink.mood.includes(sel.mood)) s += 3;
+  if (sel.spirit !== "valfri" && drink.spirit.includes(sel.spirit)) s += 3;
+  else if (sel.spirit === "valfri") s += 1;
+  if (sel.mixer !== "valfri" && drink.mixer.includes(sel.mixer)) s += 3;
+  else if (sel.mixer === "valfri") s += 1;
+  return s;
+}
+
+function getDrink() {
+  if (!drinks.length) { document.getElementById('result').innerHTML = '<div class="loading">Laddar recept…</div>'; return; }
+  const sel = getSelections();
+  document.getElementById('result').innerHTML = '<div class="loading"><div class="spinner"></div>Blandar ihop något gott…</div>';
+  setTimeout(() => {
+    let scored = drinks.map((d, i) => ({ d, i, s: score(d, sel) }));
+    const maxScore = Math.max(...scored.map(x => x.s));
+    const best = scored.filter(x => x.s === maxScore && x.i !== lastIndex);
+    const pick = best.length ? best[Math.floor(Math.random() * best.length)] : scored.find(x => x.i !== lastIndex) || scored[0];
+    lastIndex = pick.i;
+    showDrink(pick.d);
+  }, 600);
+}
+
+function showDrink(d) {
+  const catClass = catColors[d.cat] || "";
+  document.getElementById('result').innerHTML = `
+    <div class="drink-card">
+      <div class="card-header ${catClass}">
+        <div class="card-emoji">${d.emoji}</div>
+        <div class="card-name">${d.name}</div>
+        <div class="card-desc">${d.desc}</div>
+      </div>
+      <div class="card-body">
+        <div class="card-section-title">Ingredienser</div>
+        <ul class="ing-list">${d.ingredients.map(i => `<li><span class="ing-dot"></span>${i}</li>`).join('')}</ul>
+        <div class="card-section-title">Gör så här</div>
+        <ol class="step-list">${d.steps.map(s => `<li>${s}</li>`).join('')}</ol>
+        ${d.tips ? `<div class="tips-box">💡 ${d.tips}</div>` : ''}
+      </div>
+    </div>
+    <button class="again-btn" onclick="getDrink()">🔄 Föreslå en annan</button>`;
+}
+
+document.querySelectorAll('.chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll(`.chip[data-group="${chip.dataset.group}"]`).forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
